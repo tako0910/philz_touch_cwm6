@@ -293,6 +293,12 @@ else ifneq ($(filter $(TARGET_PRODUCT),cm_m7wlj),)
     KERNEL_EXFAT_MODULE_NAME := "texfat"
     BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
 
+#HTC J butterfly - dlxj
+else ifneq ($(filter $(TARGET_PRODUCT),cm_dlxj),)
+    TARGET_COMMON_NAME := HTC J butterfly ($(TARGET_PRODUCT))
+    KERNEL_EXFAT_MODULE_NAME := "texfat"
+    BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
+
 #HTC One X - endeavoru
 else ifeq ($(TARGET_PRODUCT), cm_endeavoru)
     TARGET_COMMON_NAME := HTC One X
